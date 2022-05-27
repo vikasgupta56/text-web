@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./web.css">
+
+    <link rel="stylesheet" href="./liquid.css">
+
+</head>
+<body>
+    <div class="one">
+    <canvas id="canvas1">
+    </canvas>
+</div>
+<div class="two-cont">
+    <!-- <div class="two"> -->
+<div class="cont flex">
+    <canvas id="canvas2"></canvas>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+    </defs>
+</svg>
+</div>
+<div class="cont web flex">
+    <!-- <button onclick="po()" class="btn">Change color</button> -->
+    <canvas id="canvas3"></canvas>
+</div>
+    </div>
+</div>
+   <!-- <img src="./salmon.jpg" onmouseenter="po" /> -->
+
+<script src="./index.js" ></script>
+<script src="./web.js" ></script>
+
+<!-- <script src="./liquid.js" ></script> -->
+</body>
+</html>
